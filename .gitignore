@@ -1,3 +1,4 @@
 # don't add the executable
 /minijks
 /doc/
+/jsk-test/
