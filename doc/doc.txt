@@ -1,0 +1,24 @@
+  #github:
+  https://github.com/lwithers/minijks
+  #unpack
+./minijks unpack --password foo --key-password server:bar ./jsk-test/truststore.jks
+
+ #pack
+ ./minijks pack ./jsk-test/truststore.jks.d/  ./jsk-test/newtruststore.jks
+
+  #inspect
+ ./minijks inspect ./jsk-test/newtruststore.jks
+
+
+./minijks pack --password changeit  ./jsk-test/  ./jsk-test/
+
+./minijks pack   ./jsk-test/  ./jsk-test/
+
+set GOARCH=amd64
+set GOOS=linux
+go build -o minijks main.go
+
+jdk keytool使用说明
+https://blog.csdn.net/feeltouch/article/details/104060045
+keytool library
+https://libs.garden/go/search?q=keystore&page=2
