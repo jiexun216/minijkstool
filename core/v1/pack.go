@@ -19,7 +19,7 @@ import (
 var CertFilePackCommand = &cli.Command{
 	Name:      "packfile",
 	Usage:     "pack a certfile into a keystore jks file",
-	ArgsUsage: "ca.crt out.jks",
+	ArgsUsage: "certs.pem out.jks",
 	Action:    CertFilePack,
 }
 
