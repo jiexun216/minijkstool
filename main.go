@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	pemraw, err := ioutil.ReadFile("./jsk-test/truststore.jks")
+
+	pemraw, err := ioutil.ReadFile("./jsk-test/certs/truststore.jks")
 	if err != nil {
 		fmt.Println(err)
 	}
