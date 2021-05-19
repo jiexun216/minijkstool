@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-	pemraw, err := ioutil.ReadFile("./jsk-test/formal/truststore.jks")
+	pemraw, err := ioutil.ReadFile("./jsk-test/formal/newtruststore.jks")
 	if err != nil {
 		fmt.Println(err)
 	}
